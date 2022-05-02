@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+
+}
+.right-side{
+    width: 50%;
+    float: right;
+
+}
+.vr{
+    color: #fff;
+    margin-top: 76px;
+    margin-left: 90px;
+    font-size: 62px;
+    font-style: italic;
+}
+.username{
+    padding: 4px;
+    margin-left: 90px;
+    width: 392px;
+}
+.email{
+    margin-top: 27px;
+    padding: 4px;
+    margin-left: 90px;
+    width: 392px;
+
+}
+.phno{
+    margin-top: 27px;
+    padding: 4px;
+    margin-left: 90px;
+    width: 392px;
+
+}
+#gdr{
+    padding: 4px;
+    margin-left: 90px;
+    font-size: 26px;
+    color: springgreen;
+
+}
+.pwd{
+    margin-top: 27px;
+    padding: 4px;
+    margin-left: 90px;
+    width: 392px
+
+}
+#r-b{
+    padding: 4px;
+    margin-left: 90px;
+    font-size:23px;
+	height:15px;
+	width:15px;
+
+}
+.sub-bt{
+    margin-top: 27px;
+    padding: 4px;
+    background: black;
+    margin-left: 238px;
+    color: turquoise;
+
+}
+.ckb{
+    margin-top: 27px;
+    padding: 4px;
+    margin-left: 90px;
+    font-size: 23px;
+    height: 31px;
+
+
+}

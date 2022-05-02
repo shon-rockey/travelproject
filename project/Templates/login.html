@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+.vr{
+    color: white;
+    margin-top: 76px;
+    margin-left: 90px;
+    font-size: 62px;
+    font-style: italic;
+}
+.username{
+    padding: 4px;
+    margin-left: 90px;
+    width: 392px;
+}
+.pwd{
+    margin-top: 27px;
+    padding: 4px;
+    margin-left: 90px;
+    width: 392px
+
+}
+.sub-bt{
+    margin-top: 27px;
+    padding: 4px;
+    background: black;
+    margin-left: 238px;
+    color: turquoise;
+
+}
+
+    </style>
+</head>
+<body style="background-color: white;   background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwhmcsglobalservices.com%2Fwp-content%2Fuploads%2F2018%2F09%2Flogin-bg.jpg&f=1&nofb=1');">
+<h1 class="vr">login</h1>
+<form action="login_page" method="post" >
+    {% csrf_token%}
+    <input class="username" type="text" name="username"  placeholder="Username" ><br>
+    <input class="pwd" type="password" name="password"  placeholder="Password" ><br>
+    <input class="sub-bt" type="submit">
+
+</form>
+</body>
+</html>

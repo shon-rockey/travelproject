@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+    margin: 0;
+
+}
+.right-side{
+    width: 50%;
+    float: right;
+
+}
+.vr{
+    color: white;
+    margin-top: 76px;
+    margin-left: 90px;
+    font-size: 62px;
+    font-style: italic;
+}
+.username{
+    padding: 4px;
+    margin-left: 90px;
+    width: 392px;
+}
+.email{
+    margin-top: 27px;
+    padding: 4px;
+    margin-left: 90px;
+    width: 392px;
+
+}
+.phno{
+    margin-top: 27px;
+    padding: 4px;
+    margin-left: 90px;
+    width: 392px;
+
+}
+.last_name{
+    margin-top: 27px;
+    padding: 4px;
+    margin-left: 90px;
+    width: 392px;
+
+}
+#gdr{
+    padding: 4px;
+    margin-left: 90px;
+    font-size: 26px;
+    color: springgreen;
+
+}
+.pwd{
+    margin-top: 27px;
+    padding: 4px;
+    margin-left: 90px;
+    width: 392px
+
+}
+#r-b{
+    padding: 4px;
+    margin-left: 90px;
+    font-size:23px;
+	height:15px;
+	width:15px;
+
+}
+.sub-bt{
+    margin-top: 27px;
+    padding: 4px;
+    background: black;
+    margin-left: 238px;
+    color: turquoise;
+
+}
+.ckb{
+    margin-top: 27px;
+    padding: 4px;
+    margin-left: 90px;
+    font-size: 23px;
+    height: 31px;
+
+
+}
+    </style>
+</head>
+<body style="background-color: white;   background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmy.cloud.net.ua%2FImages%2Fregister_page_01_5_background.jpg&f=1&nofb=1');" >
+<h1 class="vr">Register</h1>
+<form  action="register" method="post">
+
+    {% csrf_token %}
+    <div style="color: cyan" >
+        <input class="username" type="text" name="username"  placeholder="Username" >
+        <br>
+        <input class="phno" type="text" name="first_name"  placeholder="first_name" >
+        <br>
+        <input class="last_name" type="text" name="last_name" placeholder="last_name">
+         <br>
+        <input class="email" type="email" name="email"  placeholder="Email" >
+        <br>
+        <input class="pwd" type="password" name="password"  placeholder="Password" >
+        <br>
+        <input class="pwd" type="password" name="password1"  placeholder="Confirm password" ><br>
+        <input class="sub-bt" type="submit">
+    </div>
+</form >
+{% for msg in messages%}
+<h1>{{msg}}</h1>
+{% endfor %}
+</body>
+
+</html>
